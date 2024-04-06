@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from '@clerk/themes';
 import { Inter } from "next/font/google";
 
 import "@stream-io/video-react-sdk/dist/css/styles.css";
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <ClerkProvider
         appearance={{
+          baseTheme: dark,
           layout: {
             socialButtonsVariant: "iconButton",
             logoImageUrl: "/icons/logo.svg",

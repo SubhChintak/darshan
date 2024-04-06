@@ -62,6 +62,7 @@ const MobileNav = () => {
                     </SheetClose>
                   );
                 })}
+                <h4><small><small> made with ❤ by <a href="https://github.com/SubhChintak">SubhChintak</a> </small></small></h4>
               </section>
             </SheetClose>
           </div>
