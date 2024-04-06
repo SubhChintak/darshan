@@ -1,7 +1,5 @@
 import MeetingTypeList from '@/components/MeetingTypeList';
 
-import React, { useState, useEffect } from 'react';
-
 const Home = () => {
 
   const now = new Date();
