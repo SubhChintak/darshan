@@ -1,10 +1,14 @@
 import MeetingTypeList from '@/components/MeetingTypeList';
 
-const Home = () => {
-  const now = new Date();
+import React, { useState, useEffect } from 'react';
 
-  const time = now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' });
-  const date = (new Intl.DateTimeFormat('en-IN', { dateStyle: 'full' })).format(now);
+const Home = () => {
+
+  const now = new Date();
+  
+  const time = now.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit' });
+  const date = (new Intl.DateTimeFormat('en-IN', { timeZone: 'Asia/Kolkata', dateStyle: 'full' })).format(now);
+  
 
   return (
     <section className="flex size-full flex-col gap-5 text-white">
